@@ -10,7 +10,7 @@ As enhanced functionality, I included:
 - The result of looking for the fingerprint of the certificate (SHA1) in the .csv file (added as an extra column).
 - Added an extra .csv file with malicious issuer information to do the same procedure above (SubjectName / CommonName) but with the issuer information.
 
-# How to use:
+## How to use:
 
 To launch the script:
 
@@ -18,11 +18,13 @@ To launch the script:
 
 It is recommended to include the script inside the nmap's scipts folder (mine is at `/usr/share/nmap/scripts`)
 
-[+] This script accepts parameters (the Subject and Issuer list to check with) with the `--script-args`. 
-[*] The parameters accepted are `list` to specify the Subject list, and `issuer-list` to specify the Issuer list.
-[*] By default, if not specified, both lists use a list called `list.csv` and `issuer_list.csv`. The format of the lists needs to be like the attached in this repository.
+[+] This script accepts parameters (the Subject and Issuer list to check with) with the `--script-args`.
 
-# Example of output
+[+] The parameters accepted are `list` to specify the Subject list, and `issuer-list` to specify the Issuer list.
+
+[+] By default, if not specified, both lists use a list called `list.csv` and `issuer_list.csv`. The format of the lists needs to be like the attached in this repository.
+
+## Example of output
 
 ```
 # Nmap 7.91 scan initiated Thu Nov 24 07:33:09 2022 as: nmap --script=untrustedTLScerts.nse -p443 -Pn -n -oN test1.txt 10.0.3.149
