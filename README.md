@@ -18,9 +18,11 @@ To launch the script:
 
 It is recommended to include the script inside the nmap's scipts folder (mine is at `/usr/share/nmap/scripts`)
 
-[+] This script accepts parameters (the Subject and Issuer list to check with) with the `--script-args`. 
-[*] The parameters accepted are `list` to specify the Subject list, and `issuer-list` to specify the Issuer list.
-[*] By default, if not specified, both lists use a list called `list.csv` and `issuer_list.csv`. The format of the lists needs to be like the attached in this repository.
+[+] This script accepts parameters (the Subject and Issuer list to check with) with the `--script-args`.
+
+[+] The parameters accepted are `list` to specify the Subject list, and `issuer-list` to specify the Issuer list.
+
+[+] By default, if not specified, both lists use a list called `list.csv` and `issuer_list.csv`. The format of the lists needs to be like the attached in this repository.
 
 # Example of output
 
